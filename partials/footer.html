@@ -1,4 +1,7 @@
   <!-- Body Scripts -->
+  {# Live reload on testing only #}
+  {% if config.environment == 'development' %}<!-- TESTING ENVIRONMENT: Live reload -->
+  <script src="assets/js/plugins/live.js"></script>{% endif %}
 
 </body>
 </html>
